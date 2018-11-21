@@ -1,5 +1,5 @@
 from sqlalchemy import (Column, String, Integer, ForeignKey)
-from sqlalchemy.orm import relationship
+from sqlalchemy.orm import relationship, validates
 
 from helpers.database import Base
 from utilities.utility import Utility
@@ -13,3 +13,7 @@ class Wing(Base, Utility):
     floor_id = Column(Integer, ForeignKey('floors.id'))
     floor = relationship('Floor')
     rooms = relationship('Room')
+
+    @validates('name')
+    def convert_upper(self, key, value):
+        return value.title()
