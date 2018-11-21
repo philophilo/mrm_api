@@ -31,7 +31,7 @@ expected_query_all_locations = {
                 {
                     "name": "St. Catherines",
                     "blocks": [{
-                        "name": "EC",
+                        "name": "Ec",
                         "floors": [{
                             "name": "3rd",
                             "rooms": [{

@@ -11,7 +11,7 @@ get_blocks_query_response = {
         "allBlocks": [
             {
                 "id": "1",
-                "name": "EC"
+                "name": "Ec"
             }
         ]
     }
